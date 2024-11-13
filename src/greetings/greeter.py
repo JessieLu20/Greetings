@@ -19,7 +19,7 @@ def greet(personal, family, title="", polite=False):
     --------
     >>> from greetings.greeter import greet
     >>> greet("Terry", "Jones")
-    'Hey, Terry Jones.
+    'Hey, Terry Jones.'
     """
 
     greeting = "How do you do, " if polite else "Hey, "

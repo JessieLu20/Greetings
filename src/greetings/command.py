@@ -3,7 +3,7 @@ from argparse import ArgumentParser
 
 from art import art
 
-from .greeter import greet
+from greetings.greeter import greet
 
 
 def process():
