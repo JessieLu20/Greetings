@@ -5,15 +5,21 @@ build-backend = "hatchling.build"
 
 [project]
 name = "Greetings"
-version = "0.1.1"
+version = "0.1.0"
+readme = { file = "README.md", content-type = "text/markdown" }
+license-files = { paths = ["LICENSE.md"] }
 dependencies = [
-    "art", # dependencies
+    "art",
+    "pyyaml",
 ]
 
 [project.scripts]
 greet = "greetings.command:process"
 
+[project.optional-dependencies]
+dev = ["pytest >= 6"]
+
 [tool.hatch.build.targets.wheel]
 packages = [
-  "src/greetings", # 这是导入包时候的名字 from greetings import *
+  "src/greetings",
 ]
