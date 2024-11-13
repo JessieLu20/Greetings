@@ -7,7 +7,7 @@ This is a very simple example package used as part of the UCL
 ## Installation
 
 ```bash
-pip install git+git://github.com/UCL-ARC-RSEing-with-Python/greeter
+pip install git+https://github.com/JessieLu20/Greetings.git
 ```
 
 ## Usage
